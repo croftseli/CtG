@@ -19,6 +19,8 @@ export default function Navbar() {
         <Image src="/logo.png" alt="Copper to Gold logo" width={128} height={32} className="w-24 md:w-32" />
       </Link>
       
+
+      {/* menu items format */}
       <ul className="hidden md:flex justify-between text-lg flex-1 gap-[5vw] mx-[8vw]">
         {links.map(link => <li key={link.href}><Link href={link.href}>{link.label}</Link></li>)}
       </ul>
