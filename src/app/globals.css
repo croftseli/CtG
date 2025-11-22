@@ -3,6 +3,7 @@
 :root {
   --background: #FFF4EB;
   --foreground: #171717;
+  --font-primary: var(--font-pt-sans);
 }
 
 @theme inline {
@@ -19,10 +20,11 @@
   }
 }
 
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary), sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

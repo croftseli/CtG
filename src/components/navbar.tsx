@@ -8,9 +8,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
     { href: "/", label: "Home" },
-    { href: "/what-to-expect", label: "What to Expect" },
-    { href: "/about-us", label: "About Us" },
-    { href: "/support-us", label: "Support Us" }
+    { href: "/what", label: "What to Expect" },
+    { href: "/aboutus", label: "About Us" },
+    { href: "/supportus", label: "Support Us" }
   ];
 
   return (

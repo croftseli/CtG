@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 const ptSans = PT_Sans({
   weight: ['400', '700'],
   subsets: ['latin'],
+  variable: "--font-pt-sans",
 })
 
 const theSeasons = localFont({
@@ -49,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ptSans.className} ${theSeasons.variable}`}>
+      <body className={`${ptSans.variable} ${theSeasons.variable}`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
