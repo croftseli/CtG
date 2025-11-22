@@ -26,10 +26,10 @@ export default function Footer() {
       </div>
       
 <div className="bg-[#7A5139] text-[#DFB97B] text-center py-4 text-sm">
-  <p>
+  <p className="font-bold text-[20px]">
     A Transformative Approach to Race Amity 
   </p>
-  <p className="mt-2">
+  <p className="text-[12px]">
     Website by{" "}
     <a 
       href="https://unitywall.co/" 
