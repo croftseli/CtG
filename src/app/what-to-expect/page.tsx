@@ -15,7 +15,7 @@ export default function WhatToExpect() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
 
           {/* Programming */}
           <div className="bg-[#F7B923] rounded-2xl text-[#7A5139] p-12 aspect-square flex flex-col justify-center">
@@ -54,9 +54,11 @@ export default function WhatToExpect() {
           </div>
         </div>
 
+
+
           {/* Extra Info that was missing from design.*/}
-        <div className="bg-[#F3E5D0] text-[#7A5139] rounded-2xl p-8 mb-12 flex flex-col items-center gap-6 md:flex-row md:items-start">
-          <p className="text-base md:text-[22px] w-full md:w-[60%] text-center md:text-left leading-relaxed">
+        <div className="bg-[#F3E5D0] text-[#7A5139] rounded-2xl p-10 mb-8 flex flex-col items-center gap-6 md:flex-row md:items-start">
+          <p className="text-base md:text-[20px] w-full md:w-[60%] text-center md:text-left leading-relaxed">
             Interracial relationships start with understanding how our behavior can reflect unconscious attitudes of superiority which impact the formation of genuine friendships. Copper to Gold brings these behaviors to light and offers ways to overcome them.
           </p>
           <ul className="space-y-2 text-sm md:text-[18px] w-full md:w-[35%] text-center md:text-left leading-relaxed">

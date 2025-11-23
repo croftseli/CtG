@@ -39,7 +39,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
       }}
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-white text-5xl font-serif text-center mb-12">
+        <h2 className="text-white text-5xl text-center mb-12" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
           {title}
         </h2>
         
@@ -72,7 +72,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="text-white text-xl font-serif">{member.name}</p>
+                  <p className="text-white text-xl" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>{member.name}</p>
                 </div>
               ))}
             </div>
@@ -92,7 +92,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-white text-xl font-serif">{member.name}</p>
+                    <p className="text-white text-xl" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>{member.name}</p>
                   </div>
                 ))}
               </div>
@@ -120,7 +120,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
                       onClick={() => toggleBio(index)}
                       className="w-full flex justify-between items-center py-5 px-4 text-left hover:bg-[#B7732B]/5 transition-colors rounded-lg group"
                     >
-                      <span className="font-serif text-2xl text-[#4A3B32] group-hover:text-[#B7732B] transition-colors">
+                      <span className="text-2xl text-[#4A3B32] group-hover:text-[#B7732B] transition-colors" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
                         {member.name}
                       </span>
                       
