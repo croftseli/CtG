@@ -2,14 +2,14 @@ export default function DonationPage() {
   return (
     <div className="min-h-screen w-full">
       {/* TOP WHITE SECTION */}
-      <div className="py-20 px-8">
+      <div className="md:py-12 px-8">
         <div className="max-w-5xl mx-auto">
           {/* HEADER */}
-          <div className="text-center mb-16">
-            <h1 className="font-serif text-[48px] text-[#4A3B32] mb-6">
+          <div className="text-center mb-8 pb:mb-16">
+            <h1 className="font-serif text-[48px] text-[#4A3B32] mb-2 md:mb-6">
               Support Us
             </h1>
-            <p className="font-sans text-[18px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[16px] md:text-[24px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed pb-0 md:pb-8">
               The Copper to Gold program is free, and we welcome any donations.
               <br />
               Thank you for supporting our work toward race amity.
@@ -18,13 +18,13 @@ export default function DonationPage() {
 
           {/* DONATIONS HELP SECTION */}
           <div className="flex items-start justify-between">
-            <div className="w-1/2">
-              <h2 className="font-serif text-[32px] text-[#B7732B] mb-8 leading-tight">
+            <div className="w-1/2 md:translate-y-6 ">
+              <h2 className="font-serif text-[22px] md:text-[32px] text-[#B7732B] mb-6 leading-tight">
                 Your donations help us continue
                 <br />
                 and expand our efforts in:
               </h2>
-              <ul className="space-y-3 text-[#4A3B32] font-sans text-[18px]">
+              <ul className="space-y-1 text-[#4A3B32] text-[16px] md:text-[20px] pb-6 md:pb-0">
                 <li className="flex items-start">
                   <span className="mr-3">•</span>
                   <span>Education, training, and program development</span>
@@ -41,13 +41,19 @@ export default function DonationPage() {
             </div>
             <div className="w-1/2 flex justify-end items-center">
               <div className="relative">
-                <div className="w-64 h-64 rounded-full bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 opacity-20"></div>
+                <div className="w-64 h-64 rounded-full"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-32 h-32 rounded-full bg-blue-500 flex items-center justify-center shadow-lg">
-                    <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                    </svg>
-                  </div>
+        
+                             
+                             
+                              <img
+                src="/placeholder.lol"
+                alt="Donation Illustration (PLACEHOLDER)"
+                className="w-32 h-32  object-cover "
+              />
+
+
+             
                 </div>
               </div>
             </div>
@@ -62,9 +68,11 @@ export default function DonationPage() {
           background: "linear-gradient(90deg, #B7732B 0%, #F7B923 100%)",
         }}
       >
-        {/* PAGE CONTENT WRAPPER */}
+
+
+        {/* DONATION METHODS - code structure here is not so good - can be reviewed*/}
         <div className="p-8 flex flex-col items-center py-20">
-          <div className="max-w-5xl w-full text-center mb-16">
+          <div className="max-w-5xl w-full text-center mb-12">
             <h2 className="font-serif text-[26px] text-white">
               Copper to Gold is grateful for any donation you feel moved to make and telling others about our program.
             </h2>
@@ -73,13 +81,17 @@ export default function DonationPage() {
             </p>
           </div>
           <div className="flex flex-col space-y-6 w-full max-w-5xl">
+
+
             {/* ZELLE */}
-            <div className="bg-[#FFF8EE] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
+            <div className="bg-[#FFF4EB] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
               <h3 className="font-serif text-[24px]">Zelle</h3>
               <p className="font-sans text-[18px]">treasurer@coppertogold.org</p>
             </div>
+
+
             {/* CHECK */}
-            <div className="bg-[#FFF8EE] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
+            <div className="bg-[#FFF4EB] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
               <div>
                 <h3 className="font-serif text-[24px]">Check</h3>
                 <p className="font-serif text-[16px]">Copper to Gold</p>
@@ -90,16 +102,20 @@ export default function DonationPage() {
                 Employer ID Number: 88-2442790
               </div>
             </div>
+
+
             {/* VENMO */}
-            <div className="bg-[#FFF8EE] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
+            <div className="bg-[#FFF4EB] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
               <h3 className="font-serif text-[24px]">Venmo</h3>
               <div className="text-right font-sans text-[16px]">
                 @copper2gold <br />
-                <span className="text-[12px]">Please note Venmo charges a small transaction fee.</span>
+                <span className="text-[14px]">Please note Venmo charges a small transaction fee.</span>
               </div>
             </div>
+
+
             {/* BENEVITY */}
-            <div className="bg-[#FFF8EE] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
+            <div className="bg-[#FFF4EB] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
               <div>
                 <h3 className="font-serif text-[24px]">Benevity</h3>
                 <p className="font-serif text-[16px]">Corporate Matching Program</p>

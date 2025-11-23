@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link';
 export default function LandingPage() {
 
 
@@ -13,7 +13,7 @@ export default function LandingPage() {
         
         {/* Left */}
         <div className="relative max-w-xl xl:-ml-32">
-          <h1 className="font-serif text-[90px] text-[#4A3B32] mb-[-20px] text-center md:text-lef lg:whitespace-nowrap">
+          <h1 className="font-serif text-[90px] text-[#2C2C2C] mb-[-20px] text-center md:text-lef lg:whitespace-nowrap">
             COPPER to GOLD
           </h1>
             {/*too lazy to make font work outside h1 as its never needed except here :)) */}
@@ -38,7 +38,7 @@ export default function LandingPage() {
             <p className="text-[#7A5139] text-l md:text-lg leading-relaxed">
               Racism denies us the world we all deserve. <br/> Copper to Gold puts YOU at the center of change.
             </p>
-            <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A5139] py-3 px-8 rounded-md transition-colors self-center md:self-start mt-4">
+            <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors self-center md:self-start mt-4">
               About Us
             </button>
           </div>
@@ -46,18 +46,18 @@ export default function LandingPage() {
 
 
       {/* Right*/}
-<div className="relative right-[-450px] h-[600px] w-full hidden lg:block overflow-visible">
-  <div className="absolute top-0 right-0 h-full w-[600px]">
-    
-    <div className="absolute top-16 right-0 w-[550px] h-[550px] pointer-events-none z-1">
-      <Image 
-        src="/brown.svg"
-        alt=""
-        fill
-        className="object-contain"
-        priority
-      />
-    </div>
+    <div className="relative right-[-450px] h-[600px] w-full hidden lg:block overflow-visible">
+      <div className="absolute top-0 right-0 h-full w-[600px]">
+        
+        <div className="absolute top-16 right-0 w-[550px] h-[550px] pointer-events-none z-1">
+          <Image 
+            src="/brown.svg"
+            alt=""
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
 
     <div className="absolute top-48 right-[12vw] w-[550px] h-[550px] pointer-events-none z-2">
       <Image 
@@ -103,9 +103,11 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A5139] font-bold py-3 px-8 rounded-md transition-colors">
+          <Link href="/what-to-expect">
+            <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors">
               Learn more
             </button>
+          </Link>
           </div>
         </div>
       </section>
@@ -119,9 +121,11 @@ export default function LandingPage() {
     <p className=" text-lg mb-6">
       Explore and unlearn behavior in a safe, guided, interactive program
     </p>
-    <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A5139] font-bold py-3 px-8 rounded-md transition-colors">
-      Learn more
-    </button>
+    <Link href="/what-to-expect">
+      <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors">
+        Learn more
+      </button>
+    </Link>
   </div>
 
   {/* Grid Columns */}

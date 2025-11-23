@@ -1,13 +1,17 @@
 export default function WhatToExpect() {
   return (
-    <main className="min-h-screen py-16 px-6">
+    <main className="min-h-screen py-8 md:py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="font-serif text-5xl mb-4">What to Expect</h1>
-          <p className="text-lg">
-            Explore and unlearn behavior in a safe, guided, interactive program
-          </p>
+        <div className="text-center pb-12">
+          <h1 className="font-serif text-5xl pb-8">What to Expect</h1>
+              <ul className="space-y-6 text-xl max-w-[85%] mx-auto leading-relaxed">
+                {/* Decided to get creative here, used this everywhere for fun :)) */}
+              <li> <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
+                <span className="font-bold text-[#F7B000]"> Gold </span></span></span>
+                is a program for personal transformation based on the principle of the oneness of humanity. </li>
+              <li>Explore and unlearn behavior in a safe, guided, interactive program</li>
+            </ul>
         </div>
 
         {/* Grid */}
@@ -24,7 +28,7 @@ export default function WhatToExpect() {
 
           {/* Some Behaviors Covered */}
           <div className="bg-[#DFB97B] text-[#7A5139] rounded-2xl p-12 aspect-square flex flex-col justify-center">
-            <h2 className="font-serif text-3xl text-center translate-y-[-48px] mb-4">Some Behaviors Covered:</h2>
+            <h2 className="font-serif text-3xl text-center translate-y-[-12px] md:translate-y-[-48px] mb-4">Some Behaviors Covered:</h2>
             <ul className="space-y-0.5 text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• Whiteness and White Privilege</li>
               <li>• Gaslighting</li>
@@ -49,6 +53,21 @@ export default function WhatToExpect() {
             <p className="text-xl max-w-[85%] mx-auto leading-relaxed">The course takes place in an <span className="font-bold">online</span> closed group setting where intimacy and trust are fostered. We encourage the sharing of personal experiences as a path toward self-discovery and to develop an awareness of different perspectives.</p>
           </div>
         </div>
+
+          {/* Extra Info that was missing from design.*/}
+        <div className="bg-[#F3E5D0] text-[#7A5139] rounded-2xl p-8 mb-12 flex flex-col items-center gap-6 md:flex-row md:items-start">
+          <p className="text-base md:text-[22px] w-full md:w-[60%] text-center md:text-left leading-relaxed">
+            Interracial relationships start with understanding how our behavior can reflect unconscious attitudes of superiority which impact the formation of genuine friendships. Copper to Gold brings these behaviors to light and offers ways to overcome them.
+          </p>
+          <ul className="space-y-2 text-sm md:text-[18px] w-full md:w-[35%] text-center md:text-left leading-relaxed">
+            <li>• The program is rooted in the Bahá’í Writings</li>
+            <li>• The 19 behaviors are studied in 2 hour sessions over 16 weeks in a closed group</li>
+            <li>• <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#7A5139]"> to 
+                <span className="font-bold text-[#F7B000]"> Gold </span></span></span> uses multimedia, current research on racism, and questions for consultation and reflection</li>
+          </ul>
+        </div>
+
+
 
         {/* Special Arrangements */}
         <div className="text-center">
