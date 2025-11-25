@@ -39,7 +39,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
       }}
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-white text-5xl text-center mb-12" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
+        <h2 className="text-white text-3xl md:text-5xl text-center mb-12" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
           {title}
         </h2>
         

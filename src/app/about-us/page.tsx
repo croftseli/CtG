@@ -45,11 +45,11 @@ const boardDescriptions = [
       <div className="py-6 md:py-12 px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <h1 className="font-serif text-[48px] text-[#4A3B32] mb-8">
+            <h1 className="font-serif pt-6 md:pt-0 text-3xl md:text-5xl text-[#4A3B32] mb-8">
               About Us
             </h1>
 
-            <div className="space-y-6 text-left text-[#4A3B32] font-sans text-[20px] leading-relaxed">
+            <div className="space-y6 text-left text-[#4A3B32] font-sans text-l md:text-xl leading-relaxed">
  
               <p>
                 <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
@@ -78,7 +78,7 @@ const boardDescriptions = [
       {/* BOTTOM BEIGE SECTION */}
       <div className="">
         <div className="max-w-4xl mx-auto py-16">
-          <p className="font-sans text-[18px] text-[#7A5139] leading-relaxed text-left">
+          <p className="font-sans px-6 md:px-0 text-m md:text-[18px] text-[#7A5139] leading-relaxed text-left">
             Copper to Gold is led by a team who are passionate about advancing healthy and just interracial relationships. Our goal is to promote sustainable change through personal behavioral transformation. With diverse experience in training and developing programs and materials, their backgrounds include: working with educational institutions, parent groups, social service organizations, and law enforcement, on issues such as cultural and ethnic diversity and desegregation compliance. Having developed resources on anti-racism by working with individuals, communities, and institutions, this team is dedicated to building a greater understanding of the impact of unconscious behaviors in their interactions with racialized communities.
           </p>
         </div>

@@ -1,11 +1,11 @@
 export default function WhatToExpect() {
   return (
     <main className="min-h-screen py-8 md:py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center pb-12">
-          <h1 className="font-serif text-5xl pb-8">What to Expect</h1>
-              <ul className="space-y-6 text-xl max-w-[85%] mx-auto leading-relaxed">
+          <h1 className="font-serif pt-6 md:pt-0 text-3xl md:text-5xl pb-8">What to Expect</h1>
+              <ul className="space-y-6 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
                 {/* Decided to get creative here, used this everywhere for fun :)) */}
               <li> <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
                 <span className="font-bold text-[#F7B000]"> Gold </span></span></span>
@@ -20,7 +20,7 @@ export default function WhatToExpect() {
           {/* Programming */}
           <div className="bg-[#F7B923] rounded-2xl text-[#7A5139] p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl pb-6 text-center mb-4">Programming</h2>
-            <ul className="space-y-3 text-xl max-w-[85%] mx-auto leading-relaxed">
+            <ul className="space-y-3 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• We explore 19 unique "inherent and at times subconscious" behaviors that negatively impact interracial relations.</li>
               <li>• Copper to Gold uses multimedia, current research on racism, and questions for consultation and reflection</li>
             </ul>
@@ -29,7 +29,7 @@ export default function WhatToExpect() {
           {/* Some Behaviors Covered */}
           <div className="bg-[#DFB97B] text-[#7A5139] rounded-2xl p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl text-center translate-y-[-12px] md:translate-y-[-48px] mb-4">Some Behaviors Covered:</h2>
-            <ul className="space-y-0.5 text-xl max-w-[85%] mx-auto leading-relaxed">
+            <ul className="space-y-0.5 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• Whiteness and White Privilege</li>
               <li>• Gaslighting</li>
               <li>• Avoiding Conversations About Race</li>
@@ -40,7 +40,7 @@ export default function WhatToExpect() {
           {/* Frequency */}
           <div className="bg-[#7A5139] text-white rounded-2xl p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl pb-6 translate-y-[-12px] text-center mb-4">Frequency</h2>
-            <ul className="space-y-3 text-xl max-w-[85%] mx-auto leading-relaxed">
+            <ul className="space-y-3 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• We offer two cohorts per year, spring and fall.</li>
               <li>• Duration is 16 weeks, 2 hours per session</li>
               <li>• We offer a variety of days and times for participants to choose from.</li>
@@ -50,7 +50,7 @@ export default function WhatToExpect() {
           {/* Environment */}
           <div className="bg-[#B7732B] text-white rounded-2xl p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl pb-10 text-center mb-4">Environment</h2>
-            <p className="text-xl max-w-[85%] mx-auto leading-relaxed">The course takes place in an <span className="font-bold">online</span> closed group setting where intimacy and trust are fostered. We encourage the sharing of personal experiences as a path toward self-discovery and to develop an awareness of different perspectives.</p>
+            <p className="text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">The course takes place in an <span className="font-bold">online</span> closed group setting where intimacy and trust are fostered. We encourage the sharing of personal experiences as a path toward self-discovery and to develop an awareness of different perspectives.</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ export default function WhatToExpect() {
 
         {/* Special Arrangements */}
         <div className="text-center">
-          <h2 className="font-serif text-3xl text-[#B7732B] mb-3">Special Arrangements</h2>
+          <h2 className="font-serif text-3xl text-[#B7732B] mb-3 py-4 md:pt-6">Special Arrangements</h2>
           <p className="text-lg">
             We are happy to consult on setting up a time that works best for you and your group.
           </p>

@@ -6,10 +6,10 @@ export default function DonationPage() {
         <div className="max-w-5xl mx-auto">
           {/* HEADER */}
           <div className="text-center mb-8 pb:mb-16">
-            <h1 className="font-serif text-[48px] text-[#4A3B32] mb-2 md:mb-6">
+            <h1 className="font-serif text-5xl py-6 text-[#4A3B32] mb-2 md:mb-6">
               Support Us
             </h1>
-            <p className="text-[16px] md:text-[24px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed pb-0 md:pb-8">
+            <p className="text-[16px] md:text-[20px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed pb-0 md:pb-8">
               The Copper to Gold program is free, and we welcome any donations.
               <br />
               Thank you for supporting our work toward race amity.
@@ -19,12 +19,12 @@ export default function DonationPage() {
           {/* DONATIONS HELP SECTION */}
           <div className="flex items-start justify-between">
             <div className="w-1/2 md:translate-y-6 ">
-              <h2 className="font-serif text-[22px] md:text-[32px] text-[#B7732B] mb-6 leading-tight">
+              <h2 className="font-serif text-[18px] md:text-[32px] text-[#B7732B] mb-6 leading-tight">
                 Your donations help us continue
                 <br />
                 and expand our efforts in:
               </h2>
-              <ul className="space-y-1 text-[#4A3B32] text-[16px] md:text-[20px] pb-6 md:pb-0">
+              <ul className="space-y-1 text-[#4A3B32] text-[14px] md:text-[20px] pb-6 md:pb-0">
                 <li className="flex items-start">
                   <span className="mr-3">•</span>
                   <span>Education, training, and program development</span>
