@@ -38,9 +38,10 @@ export default function LandingPage() {
       <p className="text-[#7A5139] text-base md:text-lg leading-relaxed">
         Racism denies us the world we all deserve. <br/> Copper to Gold puts YOU at the center of change.
       </p>
+      <Link href="/about-us">
       <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] text-m py-2 md:py-3 px-6 md:px-8 rounded-md transition-colors mt-4">
         About Us
-      </button>
+      </button></Link>
     </div>
   </div>
 
