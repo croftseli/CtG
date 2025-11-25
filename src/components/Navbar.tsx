@@ -23,7 +23,7 @@ export default function Navbar() {
         </Link>
 
         {/* menu items format */}
-        <ul className="hidden md:flex justify-between text-xl flex-1 gap-[5vw] mx-[8vw]">
+        <ul className="hidden md:flex justify-between text-l lg:text-xl flex-1 gap-[5vw] mx-[8vw]">
           {links.map(link => {
             const isActive = pathname === link.href;
             return (

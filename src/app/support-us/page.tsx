@@ -76,8 +76,8 @@ export default function DonationPage() {
             <h2 className="font-serif text-[26px] text-white">
               Copper to Gold is grateful for any donation you feel moved to make and telling others about our program.
             </h2>
-            <p className="font-serif text-[18px] text-white mt-2">
-              Choose from these donation methods.
+            <p className="font-serif text-[18px] text-white mt-6">
+              Choose from donation methods below.
             </p>
           </div>
           <div className="flex flex-col space-y-6 w-full max-w-5xl">
@@ -86,7 +86,7 @@ export default function DonationPage() {
             {/* ZELLE */}
             <div className="bg-[#FFF4EB] rounded-xl shadow p-8 flex justify-between items-center text-[#4A3B32]">
               <h3 className="font-serif text-[24px]">Zelle</h3>
-              <p className="font-sans text-[18px]">treasurer@coppertogold.org</p>
+              <p className="font-sans text-[12px] md:text-[18px]">treasurer@coppertogold.org</p>
             </div>
 
 
@@ -96,7 +96,7 @@ export default function DonationPage() {
                 <h3 className="font-serif text-[24px]">Check</h3>
                 <p className="font-serif text-[16px]">Copper to Gold</p>
               </div>
-              <div className="text-right font-sans text-[14px] w-1/2">
+              <div className="text-right font-sans text-[12px] md:text-[14px] w-1/2">
                 Copper to Gold a Transformative approach to Race Amity <br />
                 5543 EDMONDSON PIKE NUM 5 NASHVILLE, TN 37211 <br />
                 Employer ID Number: 88-2442790
@@ -109,7 +109,7 @@ export default function DonationPage() {
               <h3 className="font-serif text-[24px]">Venmo</h3>
               <div className="text-right font-sans text-[16px]">
                 @copper2gold <br />
-                <span className="text-[14px]">Please note Venmo charges a small transaction fee.</span>
+                <span className="text-[12px] md:text-[14px] px-4">Please note Venmo charges a small transaction fee.</span>
               </div>
             </div>
 

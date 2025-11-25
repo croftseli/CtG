@@ -12,7 +12,7 @@ export default function LandingPage() {
   
   {/* Left */}
   <div className="relative max-w-xl ml-4 xl:-ml-32 md:pt-8 text-left">
-    <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-24 md:pt-2.5 lg:whitespace-nowrap">
+    <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap">
       COPPER to GOLD
     </h1>
      
@@ -38,7 +38,7 @@ export default function LandingPage() {
       <p className="text-[#7A5139] text-base md:text-lg leading-relaxed">
         Racism denies us the world we all deserve. <br/> Copper to Gold puts YOU at the center of change.
       </p>
-      <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors mt-4">
+      <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] text-m py-2 md:py-3 px-6 md:px-8 rounded-md transition-colors mt-4">
         About Us
       </button>
     </div>
