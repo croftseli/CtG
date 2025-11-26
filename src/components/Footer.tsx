@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="relative h-64 md:h-80 flex flex-col items-center justify-center text-white px-6">
+      <div className="relative h-46 md:h-80 flex flex-col items-center justify-center text-white px-6">
         <Image src="/footer.png" alt="" fill className="object-cover" />
         <div className="relative z-10 text-center">
           <h2 className="text-2xl md:text-4xl mb-6">Ready to join or Have questions for us?</h2>

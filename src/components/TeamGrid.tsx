@@ -124,7 +124,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
                         {member.name}
                       </span>
                       
-                      {/* Inline SVG Chevron */}
+                      {/* SVG Chevron */}
                       <div className={`transform transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
                         <svg 
                           width="24" 
@@ -153,7 +153,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
                           {/* Left: Text Content */}
                           <div className="flex-1 space-y-4 text-[#4A3B32] pt-2">
                             {bioParagraphs.map((paragraph, pIndex) => (
-                              <p key={pIndex} className="font-sans text-lg leading-relaxed">
+                              <p key={pIndex} className="font-sans text-m md:text-lg leading-relaxed">
                                 {paragraph}
                               </p>
                             ))}

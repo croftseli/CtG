@@ -12,23 +12,21 @@ export default function LandingPage() {
   
   {/* Left */}
   <div className="relative max-w-xl ml-4 xl:-ml-32 md:pt-8 text-left">
-    <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap">
+    <h1 className="font-serif text-[42px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap">
       COPPER to GOLD
     </h1>
      
-    <p className="font-serif text-[22px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
+    <p className="font-serif text-[20px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
       A transformative approach to race amity.
     </p>
 
       <div
         className="
           relative
-          ml-6
-          border-l-2
+          border-l-1 md:border-l-2
           border-[#7A5139]
           px-6 md:pl-8
           w-full md:w-auto
-          mx-auto md:mx-0
           text-left
           h-full max-h-[220px]
           flex flex-col items-start
@@ -96,7 +94,7 @@ export default function LandingPage() {
                 Promote sustainable change through personal behavioral transformation
               </h2>
 
-              <div className="border-l-2 border-white pl-6 mb-10">
+              <div className="border-l-1 md:border-l-2 border-white pl-6 mb-10">
 
                 <p className="text-white/90 text-m md:text-lg leading-relaxed">
                   Our mission is to guide a process of personal transformation as we explore attitudes and behaviors associated with anti-black racism and prejudice. We provide an interactive environment that facilitates reflection and collective learning, invites diverse perspectives and encourages building healthy interracial relationships.
