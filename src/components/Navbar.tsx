@@ -19,7 +19,7 @@ export default function Navbar() {
     <>
       <nav className="w-full flex items-center justify-between px-6 md:px-12 py-4 md:py-6 fixed top-0 left-0 right-0 z-50 bg-[#FFF4EB]">
         <Link href="/" className="pl-2 md:pl-4">
-          <Image src="/logo.svg" alt="Copper to Gold logo" width={128} height={32} className="w-28 md:w-32" />
+          <Image src="/logo.png" alt="Copper to Gold logo" width={128} height={32} className="w-28 md:w-32" />
         </Link>
 
         {/* menu items format */}
