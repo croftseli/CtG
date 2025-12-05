@@ -17,7 +17,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
   // State for toggling between Grid and Bios view
   const [showBios, setShowBios] = useState(false);
   
-  // State for the Accordion logic in Bios view
+  // State for the Arrangement logic in Bios view
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   // Logic for Grid View splitting
@@ -33,9 +33,9 @@ const TeamGrid: React.FC<TeamGridProps> = ({ title, members, descriptions }) => 
 
   return (
     <div
-      className="w-full py-20 px-8 transition-all duration-500"
+      className="w-full py-10 px-8 transition-all duration-500"
       style={{
-        background: "linear-gradient(90deg, #B7732B 0%, #F7B923 100%)",
+        background: "linear-gradient(90deg, #F7B923 0%, #B7732B  100%)",
       }}
     >
       <div className="max-w-7xl mx-auto">

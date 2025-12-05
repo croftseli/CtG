@@ -10,7 +10,8 @@ export default function DonationPage() {
               Support Us
             </h1>
             <p className="text-[16px] md:text-[20px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed pb-0 md:pb-8">
-              The Copper to Gold program is free, and we welcome any donations.
+              The <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
+                <span className="font-bold text-[#F7B000]"> Gold </span></span></span>program is <span className="font-bold">FREE</span>, and we welcome any donations.
               <br />
               Thank you for supporting our work toward race amity.
             </p>
@@ -65,7 +66,7 @@ export default function DonationPage() {
       <div
         className="w-full"
         style={{
-          background: "linear-gradient(90deg, #B7732B 0%, #F7B923 100%)",
+          background: "linear-gradient(90deg, #F7B923 0%, #B7732B  100%)",
         }}
       >
 

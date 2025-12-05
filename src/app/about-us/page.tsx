@@ -15,7 +15,7 @@ export default function AboutPage() {
     { name: 'Romy Rahmanian', imageUrl: '/staff/romy.jpg' },
     { name: 'Sue St. Clair', imageUrl: '/staff/sue.jpg' },
     { name: 'Raven Deerwater', imageUrl: '/staff/raven.jpg' },
-    { name: 'Karen Streets-Anderson', imageUrl: '/staff/karen.jpg' },
+    { name: 'Karen Streets Anderson', imageUrl: '/staff/karen.jpg' },
     { name: 'Gary Littell', imageUrl: '/staff/garyl.jpg' },
     { name: 'Gary Sulski', imageUrl: '/staff/garys.jpg' },
   ];
@@ -79,7 +79,8 @@ const boardDescriptions = [
       <div className="">
         <div className="max-w-4xl mx-auto py-16">
           <p className="font-sans px-6 md:px-0 text-m md:text-[18px] text-[#7A5139] leading-relaxed text-left">
-            Copper to Gold is led by a team who are passionate about advancing healthy and just interracial relationships. Our goal is to promote sustainable change through personal behavioral transformation. With diverse experience in training and developing programs and materials, their backgrounds include: working with educational institutions, parent groups, social service organizations, and law enforcement, on issues such as cultural and ethnic diversity and desegregation compliance. Having developed resources on anti-racism by working with individuals, communities, and institutions, this team is dedicated to building a greater understanding of the impact of unconscious behaviors in their interactions with racialized communities.
+            <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
+                <span className="font-bold text-[#F7B000]"> Gold </span></span></span> is led by a team who are passionate about advancing healthy and just interracial relationships. Our goal is to promote sustainable change through personal behavioral transformation. With diverse experience in training and developing programs and materials, their backgrounds include: working with educational institutions, parent groups, social service organizations, and law enforcement, on issues such as cultural and ethnic diversity and desegregation compliance. Having developed resources on anti-racism by working with individuals, communities, and institutions, this team is dedicated to building a greater understanding of the impact of unconscious behaviors in their interactions with racialized communities.
           </p>
         </div>
 

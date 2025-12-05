@@ -1,21 +1,47 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import GradientText from '@/components/GradientText';
 export default function LandingPage() {
 
 
 {/* */}
 
   return (
-    <main className="min-h-screen overflow-x-hidden font-sans text-[#1a1a1a]">
-      {/* --- SECTION 1: CtG (2 columns) --- */}
-<section className="relative w-full max-w-7xl mx-auto pb-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <main className="min-h-screen overflow-x-hidden font-sans">
+  {/* --- SECTION 1: CtG (2 columns - text and face ) --- */}
+  <section className="relative w-full md:max-w-7xl mx-auto pb-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
   
   {/* Left */}
-  <div className="relative max-w-xl ml-4 xl:-ml-32 md:pt-8 text-left">
-    <h1 className="font-serif text-[42px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap">
-      COPPER to GOLD
-    </h1>
-     
+  <div className="overflow-show max-w-xl ml-4 md:ml-2 md:pt-8 text-left">
+      <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
+
+        <div className="py-2">
+          <GradientText
+            colors={["#B7732B", "#B7732B", "#B7732B", "black", "#B7732B",  "#B7732B","#B7732B", ]}
+            animationSpeed={19}
+            showBorder={false}
+            className="cursor-default"
+          >
+            COPPER
+          </GradientText>
+        </div>
+
+        <span className="text-[20px] md:text-[52px] relative translate-y-[-5px] md:translate-y-[-10px]">
+          TO
+        </span>
+
+        <div className="py-2">
+          <GradientText
+            colors={["#F7B923", "black", "#F7B923", "black", "#F7B923", "black"]}
+            animationSpeed={12}
+            showBorder={false}
+            className="custom-class"
+          >
+            GOLD
+          </GradientText>
+        </div>
+
+      </h1>
     <p className="font-serif text-[20px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
       A transformative approach to race amity.
     </p>
@@ -44,31 +70,16 @@ export default function LandingPage() {
   </div>
 
   {/* Right*/}
-  <div className="relative right-[-450px] h-[600px] w-full hidden lg:block overflow-visible">
-    <div className="absolute top-0 right-0 h-full w-[600px]">
-      
-      <div className="absolute top-16 right-0 w-[550px] h-[550px] pointer-events-none z-1">
-        <Image 
-          src="/brown.svg"
-          alt=""
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-
-      <div className="absolute top-48 right-[12vw] w-[550px] h-[550px] pointer-events-none z-2">
-        <Image 
-          src="/gold.svg"
-          alt=""
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-
+    <div className="relative right-[-150px] bottom-[-65px] h-[650] hidden lg:block">
+      <Image 
+        src="/head.png"
+        alt=""
+        fill
+        className="object-cover pointer-events-none"
+        priority
+      />
     </div>
-  </div>
+
 </section>
 
         {/* --- SECTION 2: MIDDLE BANNER --- */}
@@ -109,16 +120,13 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
-
-
 {/* --- SECTION 3: WHAT TO EXPECT --- */}
-<section className="py-20 px-6 lg:px-12 max-w-7xl mx-auto">
-  <div className="text-center mb-10">
-    <h2 className="font-serif text-3xl md:text-5xl text-[#C18227] mb-3">What to Expect</h2>
-    <p className="text-m md:text-lg mb-16">
-      Explore and unlearn behavior in a safe, guided, interactive program
-    </p>
+  <section className="py-20 px-6 lg:px-12 max-w-7xl mx-auto">
+    <div className="text-center mb-10">
+      <h2 className="font-serif text-3xl md:text-5xl text-[#C18227] mb-3">What to Expect</h2>
+      <p className="text-m md:text-lg mb-16">
+        Explore and unlearn behavior in a safe, guided, interactive program
+      </p>
     <Link href="/what-to-expect">
       <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-6 rounded-md transition-colors">
         Learn more
@@ -129,12 +137,12 @@ export default function LandingPage() {
   {/* Grid Columns */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-18">
 
-    {/*should make this reusable maybe */}
+    {/* Should make this reusable maybe */}
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="target.svg" alt="Target icon" fill className="object-contain" />
+        <Image src="check.svg" alt="Target icon" fill className="object-contain" />
       </div>
-      <h3 className="font-serif text-2xl mb-4">What We Cover</h3>
+      <h3 className="font-serif text-3xl mb-4">What We Cover</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug">
         <li>• Whiteness and White Privilege</li>
         <li>• Gaslighting</li>
@@ -143,11 +151,11 @@ export default function LandingPage() {
       </ul>
     </div>
 
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col py-6 md:py-0 items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="hourglass.svg" alt="Hourglass icon" fill className="object-contain" />
+        <Image src="calendar.svg" alt="Hourglass icon" fill className="object-contain" />
       </div>
-      <h3 className="font-serif text-2xl mb-4">When and How</h3>
+      <h3 className="font-serif text-3xl mb-4">When and How</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m  leading-snug">
         <li>• Cohorts meet twice a year</li>
         <li>• Each cohort lasts 16 weeks</li>
@@ -158,9 +166,9 @@ export default function LandingPage() {
 
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="heart.svg" alt="Heart icon" fill className="object-contain" />
+        <Image src="gears.svg" alt="Gears icon" fill className="object-contain scale-150" />
       </div>
-      <h3 className="font-serif text-2xl mb-4">How It Works</h3>
+      <h3 className="font-serif text-3xl mb-4">How It Works</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug ">
         <li>• A closed, supportive group</li>
         <li>• Intimate setting of trust and respect</li>
