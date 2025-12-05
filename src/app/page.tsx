@@ -12,8 +12,8 @@ export default function LandingPage() {
   <section className="relative w-full md:max-w-7xl mx-auto pb-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
   
   {/* Left */}
-  <div className="overflow-show max-w-xl ml-4 md:ml-2 md:pt-8 text-left">
-      <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
+  <div className="relative max-w-xl ml-4 md:ml-2 md:pt-8 text-left">
+      <h1 className="font-serif text-[42px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
 
         <div className="py-2">
           <GradientText
