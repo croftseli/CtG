@@ -48,13 +48,11 @@ export default function DonationPage() {
                              
                              
                               <img
-                src="/placeholder.lol"
+                src="/qr.png"
                 alt="Donation Illustration (PLACEHOLDER)"
-                className="w-32 h-32  object-cover "
+                className="translate-x-16 md:translate-x-0 scale-125 md:scale-175"
               />
-
-
-             
+                <section id="orange"></section>
                 </div>
               </div>
             </div>

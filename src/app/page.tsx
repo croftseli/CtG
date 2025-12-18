@@ -13,7 +13,7 @@ export default function LandingPage() {
   
   {/* Left */}
   <div className="relative max-w-xl ml-4 md:ml-2 md:pt-8 text-left">
-      <h1 className="font-serif text-[42px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
+      <h1 className="font-serif text-[48px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
 
         <div className="py-2">
           <GradientText
@@ -26,7 +26,7 @@ export default function LandingPage() {
           </GradientText>
         </div>
 
-        <span className="text-[20px] md:text-[52px] relative translate-y-[-5px] md:translate-y-[-10px]">
+        <span className="text-[24px] md:text-[52px] relative translate-y-[-5px] md:translate-y-[-10px]">
           TO
         </span>
 
@@ -42,7 +42,7 @@ export default function LandingPage() {
         </div>
 
       </h1>
-    <p className="font-serif text-[20px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
+    <p className="font-serif text-[18px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
       A transformative approach to race amity.
     </p>
 
@@ -59,7 +59,7 @@ export default function LandingPage() {
         "
       >
 
-      <p className="text-[#7A5139] text-base md:text-lg leading-relaxed">
+      <p className="text-[#7A5139] text-[16px] md:text-lg leading-relaxed">
         Racism denies us the world we all deserve. <br/> Copper to Gold puts YOU at the center of change.
       </p>
       <Link href="/about-us">
@@ -124,23 +124,24 @@ export default function LandingPage() {
   <section className="py-20 px-6 lg:px-12 max-w-7xl mx-auto">
     <div className="text-center mb-10">
       <h2 className="font-serif text-3xl md:text-5xl text-[#C18227] mb-3">What to Expect</h2>
-      <p className="text-m md:text-lg mb-16">
+      <p className="text-m md:text-lg mb-8 md:mb-12">
         Explore and unlearn behavior in a safe, guided, interactive program
       </p>
     <Link href="/what-to-expect">
-      <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-6 rounded-md transition-colors">
+      {/* <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-2 md:py-3 px-4 md:px-6 rounded-md transition-colors">
         Learn more
-      </button>
+      </button> */} 
+      {/* Commented this button out, it's redundant */}
     </Link>
   </div>
 
   {/* Grid Columns */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-18">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8 md:mt-14">
 
     {/* Should make this reusable maybe */}
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="check.svg" alt="Target icon" fill className="object-contain" />
+        <Image src="check.svg" alt="Target icon" fill className="object-contain scale-75 md:scale-100" />
       </div>
       <h3 className="font-serif text-3xl mb-4">What We Cover</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug">
@@ -148,12 +149,13 @@ export default function LandingPage() {
         <li>• Gaslighting</li>
         <li>• Avoiding Conversations About Race</li>
         <li>• Intention vs. Impact</li>
+        <li>• And Much More...</li> 
       </ul>
     </div>
 
     <div className="flex flex-col py-6 md:py-0 items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="calendar.svg" alt="Hourglass icon" fill className="object-contain" />
+        <Image src="qmark.svg" alt="Hourglass icon" fill className="object-contain scale-100 md:scale-133" />
       </div>
       <h3 className="font-serif text-3xl mb-4">When and How</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m  leading-snug">
@@ -166,7 +168,7 @@ export default function LandingPage() {
 
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="gears.svg" alt="Gears icon" fill className="object-contain scale-150" />
+        <Image src="gears.svg" alt="Gears icon" fill className="object-contain scale-125 md:scale-150" />
       </div>
       <h3 className="font-serif text-3xl mb-4">How It Works</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug ">

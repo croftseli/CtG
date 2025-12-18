@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="relative h-46 md:h-64 flex flex-col items-center justify-center text-white px-6">
         <Image src="/footer.png" alt="" fill className="object-cover" />
         <div className="relative z-10 text-center">
-          <h2 className="text-2xl md:text-4xl mb-6">Ready to join?</h2>
+          <h2 className="text-[#FFF4EB] text-2xl md:text-4xl mb-6">Ready to join?</h2>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
             <span>Join Mailing List</span>
           </Link>
@@ -16,22 +16,50 @@ export default function Footer() {
       </div>
       
       <div className="bg-[#DFB97B] px-4 md:px-12 md:py-4 flex flex-row items-center justify-between">
-       <Image 
-          src="/logo.png" 
-          alt="Copper to Gold logo" 
-          width={192} 
-          height={48} 
-          className="w-32 h-auto md:w-48 mx-2 md:mx-[4vw]" 
-        />
-        
-        <div className="text-left text-[12px] md:text-[18px] pl-2 md:pr-8 md:mx-[8vw]">
-          <p className="">Questions? Call or Email us:</p>
-      <a 
-        href="mailto:admin@coppertogold.org" 
-        className="block pt-4 break-all md:break-normal hover:underline hover:text-[#B7732B]"
-      >
-        admin@coppertogold.org
-      </a>
+        <Link href="/">
+          <Image 
+            src="/logo.png" 
+            alt="Copper to Gold logo" 
+            width={192} 
+            height={48} 
+            className="w-28 md:w-38 h-auto mx-2 md:mx-[4vw] cursor-pointer" 
+          />
+        </Link>
+
+        <Link href="/calendar" className="flex flex-col items-center text-center group">
+          <Image 
+            src="/calendar.svg" 
+            alt="Calendar icon" 
+            width={32} 
+            height={32} 
+            className="w-6 md:w-10 h-auto scale-125 md:mb-4" 
+          />
+          <p className="hidden md:block text-[10px] md:text-[18px] group-hover:underline">
+            Our Program
+          </p>
+        </Link>
+
+        <Link href="#orange" className="flex flex-col items-center text-center group">
+          <Image 
+            src="/heart.svg" 
+            alt="Heart icon" 
+            width={32} 
+            height={32} 
+            className="w-6 md:w-10 h-auto transition-transform scale-125 group-hover:scale-150 md:mb-4" 
+          />
+          <p className="text-[10px] md:text-[18px] group-hover:underline">
+            Donate Now
+          </p>
+        </Link>
+
+        <div className="text-left text-[12px] md:text-[18px] pl-2 md:pr-8 md:mx-[4vw]">
+          <p>Questions? Call or Email us:</p>
+          <a 
+            href="mailto:admin@coppertogold.org" 
+            className="block break-all md:break-normal hover:underline hover:text-[#B7732B]"
+          >
+            admin@coppertogold.org
+          </a>
           <p className="block">1.615.475.5565</p>
         </div>
       </div>
