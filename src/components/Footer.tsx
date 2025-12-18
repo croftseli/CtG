@@ -22,11 +22,11 @@ export default function Footer() {
             alt="Copper to Gold logo" 
             width={192} 
             height={48} 
-            className="w-28 md:w-38 h-auto mx-2 md:mx-[4vw] cursor-pointer" 
+            className="w-24 md:w-38 h-auto mx-2 md:mx-[4vw] cursor-pointer" 
           />
         </Link>
 
-        <Link href="/calendar" className="flex flex-col items-center text-center group">
+        <Link href="/calendar" className="flex flex-col items-center text-center group translate-x-[-2px] md:translate-x-0">
           <Image 
             src="/calendar.svg" 
             alt="Calendar icon" 
@@ -39,7 +39,7 @@ export default function Footer() {
           </p>
         </Link>
 
-        <Link href="#orange" className="flex flex-col items-center text-center group">
+        <Link href="/support-us#orange" className="flex flex-col items-center text-center group">
           <Image 
             src="/heart.svg" 
             alt="Heart icon" 
