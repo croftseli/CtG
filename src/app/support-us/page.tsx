@@ -50,7 +50,7 @@ export default function DonationPage() {
                               <img
                 src="/qr.png"
                 alt="Donation Illustration (PLACEHOLDER)"
-                className="translate-x-16 md:translate-x-0 scale-125 md:scale-175"
+                className="translate-x-16 md:translate-x-0 scale-80 md:scale-175"
               />
                 <section id="orange"></section>
                 </div>
