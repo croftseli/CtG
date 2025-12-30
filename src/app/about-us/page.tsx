@@ -3,7 +3,7 @@ import TeamGrid from '@/components/TeamGrid';
 export default function AboutPage() {
       const adminTeam = [
     { name: 'Regina Jonker', imageUrl: '/staff/regina.jpg' },
-    { name: 'Aaron Crossley', imageUrl: '/staff/aaron.jpg' },
+    { name: 'Aaron Crossley,', imageUrl: '/staff/aaron.jpg' },
     { name: 'Sharon Vaughn', imageUrl: '/staff/sharonv.jpg' },
     { name: 'Ladan Delpak', imageUrl: '/staff/ladan.jpg' },
     { name: 'Sharon Nesbit Davis', imageUrl: '/staff/sharonn.jpg' },
