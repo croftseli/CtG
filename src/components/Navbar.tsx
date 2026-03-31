@@ -42,11 +42,11 @@ export default function Navbar() {
         </ul>
 
         <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform"
-          className="hidden md:flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] pr-6"
+          href="https://forms.gle/ATCL16rRaKBgLmWz9"
+          className="hidden md:flex text-bold items-center gap-2 px-5 py-2 rounded bg-[#F7B923] pr-6"
         >
-          <Image src="/bell.svg" alt="bell" width={12} height={12} />
-          <span>Notify Me</span>
+          {/* <Image src="/bell.svg" alt="bell" width={12} height={12} /> */}
+          <span>Join Cohort 12!</span>
         </Link>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden flex flex-col gap-1.5 p-2">
