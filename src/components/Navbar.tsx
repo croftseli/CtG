@@ -30,9 +30,8 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`transition-colors hover:text-[#C18227] ${
-                    isActive ? "text-[#C18227] font-semibold border-b-2 border-[#C18227] pb-0.5" : ""
-                  }`}
+                  className={`transition-colors hover:text-[#C18227] ${isActive ? "text-[#C18227] font-semibold border-b-2 border-[#C18227] pb-0.5" : ""
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -63,9 +62,8 @@ export default function Navbar() {
                 <li key={link.href} className="border-b">
                   <Link
                     href={link.href}
-                    className={`block px-6 py-4 transition-colors hover:text-[#C18227] ${
-                      isActive ? "text-[#C18227] font-semibold" : ""
-                    }`}
+                    className={`block px-6 py-4 transition-colors hover:text-[#C18227] ${isActive ? "text-[#C18227] font-semibold" : ""
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -75,12 +73,12 @@ export default function Navbar() {
             })}
             <li className="p-4">
               <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform"
-                className="flex items-center justify-center gap-2 px-4 py-2 rounded bg-[#F7B923]"
+                href="https://forms.gle/ATCL16rRaKBgLmWz9"
+                className="hidden md:flex text-bold items-center gap-2 px-5 py-2 rounded bg-[#F7B923] pr-6"
                 onClick={() => setIsOpen(false)}
               >
-                <Image src="/bell.svg" alt="bell" width={12} height={12} />
-                <span>Notify Me</span>
+                {/* <Image src="/bell.svg" alt="bell" width={12} height={12} /> */}
+                <span>Join Cohort 12!</span>
               </Link>
             </li>
           </ul>
