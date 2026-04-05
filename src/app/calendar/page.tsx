@@ -10,7 +10,7 @@ export default function CalendarPage() {
       {/* Calendar Container */}
       <section className="max-w-7xl mx-auto bg-white rounded-xl shadow-md p-4 md:p-8 border border-[#E6D3B1]">
         <div className="w-full overflow-hidden rounded-lg">
-         <iframe
+          <iframe
             src="https://calendar.google.com/calendar/embed?src=admin%40coppertogold.org"
             style={{ border: 0 }}
             width="100%"
@@ -18,7 +18,7 @@ export default function CalendarPage() {
             frameBorder="0"
             scrolling="no"
             title="Program Calendar"
-            ></iframe>
+          ></iframe>
         </div>
       </section>
     </main>
