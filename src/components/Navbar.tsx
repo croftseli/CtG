@@ -77,7 +77,7 @@ export default function Navbar() {
                 className="hidden md:flex text-bold items-center gap-2 px-5 py-2 rounded bg-[#F7B923] pr-6"
                 onClick={() => setIsOpen(false)}
               >
-                {/* <Image src="/bell.svg" alt="bell" width={12} height={12} />  ... */}
+                {/* <Image src="/bell.svg" alt="bell" width={12} height={12} />  */}
                 <span>Join Cohort 12!</span>
               </Link>
             </li>
