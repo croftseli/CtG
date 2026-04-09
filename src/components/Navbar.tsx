@@ -73,12 +73,12 @@ export default function Navbar() {
             })}
             <li className="p-4">
               <Link
-                href="https://forms.gle/ATCL16rRaKBgLmWz9"
-                className="hidden md:flex text-bold items-center gap-2 px-5 py-2 rounded bg-[#F7B923] pr-6"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform"
+                className="flex items-center justify-center gap-2 px-4 py-2 rounded bg-[#F7B923]"
                 onClick={() => setIsOpen(false)}
               >
-                {/* <Image src="/bell.svg" alt="bell" width={12} height={12} />  */}
-                <span>Join Cohort 12!</span>
+                <Image src="/bell.svg" alt="bell" width={12} height={12} />
+                <span>Notify Me</span>
               </Link>
             </li>
           </ul>

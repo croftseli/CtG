@@ -9,13 +9,13 @@ export default function Footer() {
         <Image src="/footer.png" alt="" fill className="object-cover" />
         <div className="relative z-10 text-center">
           <h2 className="text-[#FFF4EB] text-2xl md:text-4xl mb-6">Ready to join?</h2>
-          {/* <Link href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
             <span>Join Mailing List</span>
-          </Link> */}
-
-          <Link href="https://forms.gle/ATCL16rRaKBgLmWz9" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
-            <span>Join Cohort 12!</span>
           </Link>
+
+          {/* <Link href="https://forms.gle/ATCL16rRaKBgLmWz9" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
+            <span>Join Cohort 12!</span>
+          </Link> */}
 
         </div>
       </div>
