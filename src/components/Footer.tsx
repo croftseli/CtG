@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="relative h-46 md:h-64 flex flex-col items-center justify-center text-white px-6">
-        <Image src="/footer.png" alt="" fill className="object-cover" />
+        <Image src="/footer.png" alt="" aria-hidden="true" fill className="object-cover" />
         <div className="relative z-10 text-center">
           <h2 className="text-[#FFF4EB] text-2xl md:text-4xl mb-6">Ready to join?</h2>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSepEd-b_GkPt5RGPD3-7Rs3Jvxwi8BztnbiFTU3sRto70I5LQ/viewform" className="inline-flex items-center gap-2 px-5 py-2 rounded bg-[#F7B923] text-[#7A2000]">
@@ -31,10 +31,10 @@ export default function Footer() {
           />
         </Link>
 
-        <Link href="/calendar" className="flex flex-col items-center text-center group translate-x-[-2px] md:translate-x-0">
+        <Link href="/calendar" aria-label="Our Program" className="flex flex-col items-center text-center group translate-x-[-2px] md:translate-x-0">
           <Image
             src="/calendar.svg"
-            alt="Calendar icon"
+            alt=""
             width={32}
             height={32}
             className="w-6 md:w-10 h-auto scale-125 md:mb-4"
@@ -44,10 +44,10 @@ export default function Footer() {
           </p>
         </Link>
 
-        <Link href="/support-us#orange" className="flex flex-col items-center text-center group">
+        <Link href="/support-us#orange" aria-label="Donate Now" className="flex flex-col items-center text-center group">
           <Image
             src="/heart.svg"
-            alt="Heart icon"
+            alt=""
             width={32}
             height={32}
             className="w-6 md:w-10 h-auto transition-transform scale-125 group-hover:scale-150 md:mb-4"
@@ -61,7 +61,7 @@ export default function Footer() {
           <p>Questions? Call or Email us:</p>
           <a
             href="mailto:admin@coppertogold.org"
-            className="block break-all md:break-normal hover:underline hover:text-[#B7732B]"
+            className="block break-all md:break-normal hover:underline"
           >
             admin@coppertogold.org
           </a>
@@ -79,6 +79,7 @@ export default function Footer() {
             href="https://unitywall.co/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Website by UnityWall, opens in a new tab"
             className="underline hover:text-white transition-colors"
           >
             UnityWall

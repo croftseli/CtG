@@ -7,7 +7,7 @@ export default function LandingPage() {
 {/* */}
 
   return (
-  <main className="min-h-screen overflow-x-hidden font-sans">
+  <div className="min-h-screen overflow-x-hidden font-sans">
   {/* --- SECTION 1: CtG (2 columns - text and face ) --- */}
   <section className="relative w-full md:max-w-7xl mx-auto pb-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
   
@@ -15,7 +15,7 @@ export default function LandingPage() {
   <div className="relative max-w-xl ml-4 md:ml-2 md:pt-8 text-left">
       <h1 className="font-serif text-[38px] md:text-[90px] text-[#2C2C2C] pt-20 md:pt-2.5 whitespace-nowrap flex items-baseline gap-3">
 
-        <div className="py-2">
+        <span className="py-2">
           <GradientText
             colors={["#B7732B", "#B7732B", "#B7732B", "black", "#B7732B",  "#B7732B","#B7732B", ]}
             animationSpeed={19}
@@ -24,13 +24,13 @@ export default function LandingPage() {
           >
             COPPER
           </GradientText>
-        </div>
+        </span>
 
         <span className="text-[24px] md:text-[52px] relative translate-y-[-5px] md:translate-y-[-10px]">
           TO
         </span>
 
-        <div className="py-2">
+        <span className="py-2">
           <GradientText
             colors={["#F7B923", "black", "#F7B923", "black", "#F7B923", "black"]}
             animationSpeed={12}
@@ -39,7 +39,7 @@ export default function LandingPage() {
           >
             GOLD
           </GradientText>
-        </div>
+        </span>
 
       </h1>
     <p className="font-serif text-[18px] md:text-[30px] mb-8" style={{ fontFamily: 'var(--font-the-seasons), serif' }}>
@@ -62,18 +62,18 @@ export default function LandingPage() {
       <p className="text-[#7A5139] text-[16px] md:text-lg leading-relaxed">
         Racism denies us the world we all deserve. <br/> Copper to Gold puts YOU at the center of change.
       </p>
-      <Link href="/about-us">
-      <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] text-m py-2 md:py-3 px-6 md:px-8 rounded-md transition-colors mt-4">
+      <Link href="/about-us" className="inline-block bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] text-m py-2 md:py-3 px-6 md:px-8 rounded-md transition-colors mt-4">
         About Us
-      </button></Link>
+      </Link>
     </div>
   </div>
 
   {/* Right*/}
     <div className="relative right-[-150px] bottom-[-65px] h-[650] hidden lg:block">
-      <Image 
+      <Image
         src="/head.png"
         alt=""
+        aria-hidden="true"
         fill
         className="object-cover pointer-events-none"
         priority
@@ -88,9 +88,10 @@ export default function LandingPage() {
           {/* Background*/}
           <div className="absolute inset-0 z-0">
               <div className="absolute right-0 w-2/3 h-full mix-blend-multiply opacity-50">
-                  <Image 
-                      src="/homepage.png" 
-                      alt="Group of people" 
+                  <Image
+                      src="/homepage.png"
+                      alt=""
+                      aria-hidden="true"
                       fill
                       className="object-cover object-center grayscale"
                   />
@@ -107,15 +108,13 @@ export default function LandingPage() {
 
               <div className="border-l-1 md:border-l-2 border-white pl-6 mb-10">
 
-                <p className="text-white/90 text-m md:text-lg leading-relaxed">
+                <p className="text-[#171717] text-m md:text-lg leading-relaxed">
                   Our mission is to guide a process of personal transformation as we explore attitudes and behaviors associated with anti-black racism and prejudice. We provide an interactive environment that facilitates reflection and collective learning, invites diverse perspectives and encourages building healthy interracial relationships.
                 </p>
               </div>
 
-            <Link href="/what-to-expect">
-              <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors">
-                Learn more
-              </button>
+                    <Link href="/what-to-expect" className="inline-block bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-3 px-8 rounded-md transition-colors">
+              Learn more
             </Link>
             </div>
           </div>
@@ -127,12 +126,7 @@ export default function LandingPage() {
       <p className="text-m md:text-lg mb-8 md:mb-12">
         Explore and unlearn behavior in a safe, guided, interactive program
       </p>
-    <Link href="/what-to-expect">
-      {/* <button className="bg-[#F4B933] hover:bg-[#e0a82e] text-[#7A2000] py-2 md:py-3 px-4 md:px-6 rounded-md transition-colors">
-        Learn more
-      </button> */} 
       {/* Commented this button out, it's redundant */}
-    </Link>
   </div>
 
   {/* Grid Columns */}
@@ -141,7 +135,7 @@ export default function LandingPage() {
     {/* Should make this reusable maybe */}
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="check.svg" alt="Target icon" fill className="object-contain scale-75 md:scale-100" />
+        <Image src="check.svg" alt="" aria-hidden="true" fill className="object-contain scale-75 md:scale-100" />
       </div>
       <h3 className="font-serif text-3xl mb-4">What We Cover</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug">
@@ -155,7 +149,7 @@ export default function LandingPage() {
 
     <div className="flex flex-col py-6 md:py-0 items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="qmark.svg" alt="Hourglass icon" fill className="object-contain scale-100 md:scale-133" />
+        <Image src="qmark.svg" alt="" aria-hidden="true" fill className="object-contain scale-100 md:scale-133" />
       </div>
       <h3 className="font-serif text-3xl mb-4">When and How</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m  leading-snug">
@@ -168,7 +162,7 @@ export default function LandingPage() {
 
     <div className="flex flex-col items-center text-center">
       <div className="mb-5 relative w-16 h-16">
-        <Image src="gears.svg" alt="Gears icon" fill className="object-contain scale-125 md:scale-150" />
+        <Image src="gears.svg" alt="" aria-hidden="true" fill className="object-contain scale-125 md:scale-150" />
       </div>
       <h3 className="font-serif text-3xl mb-4">How It Works</h3>
       <ul className="text-center md:text-left w-full lg:pl-10 px-6 space-y-1.5 text-m leading-snug ">
@@ -182,6 +176,6 @@ export default function LandingPage() {
   </div>
 </section>
 
-    </main>
+    </div>
   )
 }

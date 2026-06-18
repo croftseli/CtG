@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Support Us | Copper to Gold",
+  description: "Support Copper to Gold through donations via Zelle, check, Venmo, or Benevity's corporate matching program.",
+};
+
 export default function DonationPage() {
   return (
     <div className="min-h-screen w-full">
@@ -10,7 +17,7 @@ export default function DonationPage() {
               Support Us
             </h1>
             <p className="text-[16px] md:text-[20px] text-[#4A3B32] max-w-2xl mx-auto leading-relaxed pb-0 md:pb-8">
-              The <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
+              The <span role="text" aria-label="Copper to Gold" className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to
                 <span className="font-bold text-[#F7B000]"> Gold </span></span></span>program is <span className="font-bold">FREE</span>, and we welcome any donations.
               <br />
               Thank you for supporting our work toward race amity.
@@ -49,10 +56,10 @@ export default function DonationPage() {
                              
                               <img
                 src="/qr.png"
-                alt="Donation Illustration (PLACEHOLDER)"
+                alt="QR code to donate to Copper to Gold"
                 className="translate-x-16 md:translate-x-0 scale-80 md:scale-175"
               />
-                <section id="orange"></section>
+                <div id="orange"></div>
                 </div>
               </div>
             </div>
@@ -72,10 +79,10 @@ export default function DonationPage() {
         {/* DONATION METHODS - code structure here is not so good - can be reviewed*/}
         <div className="p-8 flex flex-col items-center py-20">
           <div className="max-w-5xl w-full text-center mb-12">
-            <h2 className="font-serif text-[26px] text-white">
+            <h2 className="font-serif text-[26px] text-[#171717]">
               Copper to Gold is grateful for any donation you feel moved to make and telling others about our program.
             </h2>
-            <p className="font-serif text-[18px] text-white mt-6">
+            <p className="font-serif text-[18px] text-[#171717] mt-6">
               Choose from donation methods below.
             </p>
           </div>
@@ -120,7 +127,7 @@ export default function DonationPage() {
                 <p className="font-serif text-[16px]">Corporate Matching Program</p>
               </div>
               <div className="text-right font-sans text-[14px]">
-                <a href="https://causes.benevity.org" className="underline hover:text-[#B7732B]">
+                <a href="https://causes.benevity.org" className="underline">
                   Causes.benevity.org
                 </a>
                 <br />

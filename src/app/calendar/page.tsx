@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Program Calendar | Copper to Gold",
+  description: "View the Copper to Gold program calendar for upcoming cohort dates and session schedules.",
+};
+
 export default function CalendarPage() {
   return (
-    <main className="min-h-screen bg-[#FFF4EB] px-6 py-20 font-sans">
+    <div className="min-h-screen bg-[#FFF4EB] px-6 py-20 font-sans">
       {/* Header */}
       <section className="max-w-7xl mx-auto mb-12">
         <h1 className="font-serif text-4xl md:text-6xl text-[#7A5139] mb-4">
@@ -21,6 +28,6 @@ export default function CalendarPage() {
           ></iframe>
         </div>
       </section>
-    </main>
+    </div>
   )
 }

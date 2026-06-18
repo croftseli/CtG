@@ -1,13 +1,20 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "What to Expect | Copper to Gold",
+  description: "Learn what to expect from the Copper to Gold program — programming, schedule, and the learning environment.",
+};
+
 export default function WhatToExpect() {
   return (
-    <main className="min-h-screen py-8 md:py-16 px-6">
+    <div className="min-h-screen py-8 md:py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center pb-12">
           <h1 className="font-serif pt-6 md:pt-0 text-3xl md:text-5xl pb-8">What to Expect</h1>
               <ul className="space-y-6 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
                 {/* Decided to get creative here, used this everywhere for fun :)) */}
-              <li> <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to 
+              <li> <span role="text" aria-label="Copper to Gold" className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#000000]"> to
                 <span className="font-bold text-[#F7B000]"> Gold </span></span></span>
                 is a program for personal transformation based on the principle of the oneness of humanity. </li>
               <li>Explore and unlearn behavior in a safe, guided, interactive program</li>
@@ -18,7 +25,7 @@ export default function WhatToExpect() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
 
           {/* Programming */}
-          <div className="bg-[#F7B923] rounded-2xl text-[#FFF4EB] p-12 aspect-square flex flex-col justify-center">
+          <div className="bg-[#F7B923] rounded-2xl text-[#7A2000] p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl pb-6 text-center mb-4">Programming</h2>
             <ul className="space-y-3 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• We explore 19 unique "inherent and at times subconscious" behaviors that negatively impact interracial relations.</li>
@@ -27,7 +34,7 @@ export default function WhatToExpect() {
           </div>
 
           {/* Some Behaviors Covered */}
-          <div className="bg-[#DFB97B] text-[#FFF4EB] rounded-2xl p-12 aspect-square flex flex-col justify-center">
+          <div className="bg-[#DFB97B] text-[#4A3B32] rounded-2xl p-12 aspect-square flex flex-col justify-center">
             <h2 className="font-serif text-3xl text-center translate-y-[-12px] md:translate-y-[-48px] mb-4">Some Behaviors Covered:</h2>
             <ul className="space-y-0.5 text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">
               <li>• Whiteness and White Privilege</li>
@@ -48,9 +55,9 @@ export default function WhatToExpect() {
           </div>
 
           {/* Environment */}
-          <div className="bg-[#B7732B] text-[#FFF4EB] rounded-2xl p-12 aspect-square flex flex-col justify-center">
-            <h2 className="font-serif text-3xl pb-10 text-center mb-4">Environment</h2>
-            <p className="text-l md:text-xl max-w-[85%] mx-auto leading-relaxed">The course takes place in an <span className="font-bold">online</span> closed group setting where intimacy and trust are fostered. We encourage the sharing of personal experiences as a path toward self-discovery and to develop an awareness of different perspectives.</p>
+          <div className="bg-[#B7732B] rounded-2xl p-12 aspect-square flex flex-col justify-center">
+            <h2 className="font-serif text-3xl pb-10 text-center mb-4 text-[#FFF4EB]">Environment</h2>
+            <p className="text-l md:text-xl max-w-[85%] mx-auto leading-relaxed text-[#171717]">The course takes place in an <span className="font-bold">online</span> closed group setting where intimacy and trust are fostered. We encourage the sharing of personal experiences as a path toward self-discovery and to develop an awareness of different perspectives.</p>
           </div>
         </div>
 
@@ -64,7 +71,7 @@ export default function WhatToExpect() {
           <ul className="space-y-2 text-sm md:text-[18px] w-full md:w-[35%] text-center md:text-left leading-relaxed">
             <li>• The program is rooted in the Bahá’í Writings</li>
             <li>• The 19 behaviors are studied in 2 hour sessions over 16 weeks in a closed group</li>
-            <li>• <span className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#7A5139]"> to 
+            <li>• <span role="text" aria-label="Copper to Gold" className="font-bold text-[#B7732B]">Copper <span className="font-normal text-[#7A5139]"> to
                 <span className="font-bold text-[#F7B000]"> Gold </span></span></span> uses multimedia, current research on racism, and questions for consultation and reflection</li>
           </ul>
         </div>
@@ -79,6 +86,6 @@ export default function WhatToExpect() {
           </p>
         </div>
       </div>
-    </main>
+    </div>
   )
 }
