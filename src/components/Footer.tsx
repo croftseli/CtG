@@ -84,6 +84,10 @@ export default function Footer() {
           >
             UnityWall
           </a>
+          {" · "}
+          <Link href="/privacy-policy" className="underline hover:text-white transition-colors">
+            Privacy Policy
+          </Link>
         </p>
       </div>
     </footer>
